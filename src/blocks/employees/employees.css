@@ -1,0 +1,86 @@
+.employees {
+    height: 100%;
+    padding: 30px;
+}
+
+.employees__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 5px;
+    height: 100%;
+    list-style: none;
+    border: 2px solid rgba(128, 128, 128, 0.19);
+}
+
+.employees__list-content {
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.employees__list-row {
+    display: grid;
+    grid-template-columns: 1fr 5fr 3fr 3fr 2fr 2fr 2fr 2fr;
+}
+
+.employees__list-field {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.employees__list-field:last-child {
+    margin-right: 0;
+}
+
+.employees__list-field_centered {
+    text-align: center;
+}
+
+.employees__list-header {
+    margin-bottom: 10px;
+    padding: 4px;
+}
+
+.employees__list-header .employees__list-field {
+    font-weight: 500;
+}
+
+.employees__list-total {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 6px;
+    line-height: 1.2;
+    font-size: 16px;
+}
+
+.employees__list .form_employee {
+    padding: 6px;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 3fr 3fr 2fr 2fr 2fr 2fr;
+}
+
+.employees__list .form_employee .form__field {
+    margin-right: 10px;
+}
+
+.employees__list .form_employee .form__controls {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.employees__list .form_employee .form__submit {
+    height: 40px;
+}
+
+.employees__item {
+    padding: 6px;
+}
+
+.employees__item:nth-child(even) {
+    background-color: rgba(215, 231, 250, 0.32);
+}
+

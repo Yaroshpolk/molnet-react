@@ -27,11 +27,10 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 exports.__esModule = true;
 var React = __importStar(require("react"));
-var ReactDOM = __importStar(require("react-dom/client"));
-require("./index.css");
-var App_1 = __importDefault(require("./components/App"));
-var react_router_dom_1 = require("react-router-dom");
-var root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(React.createElement(react_router_dom_1.BrowserRouter, null,
-    React.createElement(App_1["default"], null)));
-//# sourceMappingURL=index.js.map
+var EmployeesList_1 = __importDefault(require("./EmployeesList"));
+var Employees = function () {
+    return (React.createElement("section", { className: "employees" },
+        React.createElement(EmployeesList_1["default"], null)));
+};
+exports["default"] = Employees;
+//# sourceMappingURL=Employees.js.map
